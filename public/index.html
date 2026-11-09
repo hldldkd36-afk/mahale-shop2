@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="فروشگاه آنلاین لوازم جانبی محله؛ خرید آسان لوازم جانبی موبایل">
+  <title>لوازم جانبی محله | خرید آنلاین</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">م</span><span>لوازم جانبی <b>محله</b><small>انتخاب هوشمند، خرید مطمئن</small></span></a>
+  <form id="searchForm" class="search"><input id="searchInput" placeholder="جست‌وجوی محصول، برند یا دسته‌بندی..." aria-label="جست‌وجو"><button>جست‌وجو</button></form>
+  <div class="top-actions"><a href="#products">محصولات</a><a href="#posts">مجله</a><button class="cart-button" id="cartOpen">سبد خرید <b id="cartCount">۰</b></button></div>
+</header>
+<main>
+  <section class="hero wrap">
+    <div class="hero-copy"><span class="eyebrow">فروشگاه تخصصی لوازم جانبی موبایل</span><h1>جزئیات کوچک،<br><em>تجربه‌ای بزرگ</em></h1><p>از شارژر و کابل تا قاب، گلس و هدفون؛ انتخاب‌های کاربردی برای هر روز.</p><a class="primary-link" href="#products">مشاهده محصولات <span>←</span></a><div class="hero-points"><span>✓ خرید آسان</span><span>✓ ثبت سفارش آزمایشی</span><span>✓ پشتیبانی فروشگاه</span></div></div>
+    <div class="hero-art"><div class="orb"></div><div class="hero-card card-back"> <span>ACCESSORIES</span><strong>SMART<br>CHOICE.</strong></div><div class="hero-card card-front"><div class="phone"><div class="phone-screen"><span>mahale</span><div class="screen-shape"></div><b>01</b></div></div><span class="float-tag">NEW COLLECTION</span></div><div class="hero-sticker">کیفیت<br><b>برای هر روز</b></div></div>
+  </section>
+  <section class="trust wrap"><div><b>ارسال سریع</b><small>ثبت و پیگیری سفارش</small></div><div><b>تنوع کاربردی</b><small>لوازم مورد نیاز روزمره</small></div><div><b>خرید آزمایشی</b><small>بدون پرداخت بانکی</small></div><div><b>پشتیبانی محلی</b><small>پاسخ‌گویی مستقیم</small></div></section>
+  <section class="section wrap" id="products"><div class="section-head"><div><span class="eyebrow">ویترین فروشگاه</span><h2>محصولات منتخب</h2></div><div id="categoryFilters" class="filters"><button class="filter active" data-cat="all">همه</button></div></div><div id="productGrid" class="product-grid"><div class="loading">در حال دریافت محصولات از دیتابیس…</div></div></section>
+  <section class="promo wrap"><div><span class="eyebrow">راهنمای انتخاب</span><h2>لوازم جانبی مناسب،<br>عمر بیشتر برای دستگاه شما</h2><p>قبل از خرید، سازگاری محصول با مدل گوشی خود را بررسی کنید.</p></div><div class="promo-symbol">✳</div></section>
+  <section class="section wrap" id="posts"><div class="section-head"><div><span class="eyebrow">از مجله محله</span><h2>تازه‌های دنیای موبایل</h2></div></div><div id="postGrid" class="post-grid"><div class="loading">در حال دریافت مطالب…</div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#"><span class="brand-mark">م</span><span>لوازم جانبی <b>محله</b><small>انتخاب هوشمند، خرید مطمئن</small></span></a><p>© تمامی حقوق برای فروشگاه لوازم جانبی محله محفوظ است.</p><a href="/admin.html">ورود مدیر</a></div></footer>
+<div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h3>سبد خرید شما</h3><button id="cartClose" class="icon-btn">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-total"><span>جمع کل</span><b id="cartTotal">۰ تومان</b></div><button class="primary-btn full" id="checkoutOpen">ادامه و ثبت سفارش آزمایشی</button><p class="tiny-note">این نسخه پرداخت واقعی ندارد؛ سفارش در دیتابیس ثبت می‌شود.</p></aside>
+<div class="modal-backdrop" id="checkoutModal"><form class="modal" id="checkoutForm"><button type="button" class="modal-x" id="checkoutClose">×</button><span class="eyebrow">تکمیل سفارش</span><h2>اطلاعات تحویل سفارش</h2><label>نام و نام خانوادگی<input name="customer_name" required maxlength="100" placeholder="نام شما"></label><label>شماره تماس<input name="phone" required inputmode="tel" placeholder="0912xxxxxxx"></label><label>آدرس کامل<textarea name="address" required rows="3" placeholder="استان، شهر، خیابان، پلاک…"></textarea></label><label>توضیحات (اختیاری)<textarea name="note" rows="2"></textarea></label><button class="primary-btn full" type="submit">ثبت خرید آزمایشی</button><p id="checkoutMessage" class="form-message"></p></form></div>
+<div class="toast" id="toast"></div>
+<script src="/app.js"></script>
+</body></html>
